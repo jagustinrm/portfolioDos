@@ -1,0 +1,38 @@
+---
+import ExperienceItem from "./ExperienceItem.astro"
+const EXPERIENCIE = [
+  {
+    date: "Actually...",
+    title: "Python Teacher",
+    company: "Algorithmics",
+    description:
+      "I teach Python to young people from 12 to 17 years old.",
+    
+  },
+  {
+    date: "Mar. 2023 - Apr. 2024",
+    title: "Programming Mentor",
+    company: "Buenos Aires City Government",
+    description:
+      "• Taught HTML, CSS, Javascript, Python, and Unity to approximately 20 teenagers per course. • Developed tailored curricula and fostered a collaborative learning environment. • Provided individualized guidance and resolved technical challenges. • Evaluated student progress and adjusted the curriculum as necessary.",
+  },
+  {
+    date: "Oct. 2022 - Mar. 2023",
+    title: "Teaching assistant for Full-Stack Development students",
+    company: "SoyHenry",
+    description:
+      "- Coordinate a group of students to achieve integration to the study group.  - Guide students in the first steps of the course. - Assist in the resolution of exercises and promote group collaboration (Pair Programming).   - Propose ideas for the improvement of the Bootcamp processes.",
+  },
+  
+]
+---
+
+<ol class="relative mt-16">
+  {
+    EXPERIENCIE.map((experiencie) => (
+      <li class="">
+        <ExperienceItem {...experiencie} />
+      </li>
+    ))
+  }
+</ol>
