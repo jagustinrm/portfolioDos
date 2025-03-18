@@ -25,6 +25,15 @@ const TAGS = {
   }
 }
 const PROJECTS = [
+{
+    title: "El libro escarlata",
+    description:
+      "Tech stack: React 18.3, Typescript, Zustand y Firebase 11.0. Frontend and database.",
+    link: "https://libroescarlata.netlify.app/",
+    image: "/projects/scarletbook.webp",
+    github: "https://github.com/jagustinrm/libroescarlata",
+    tags: [TAGS.REACT, TAGS.JS],
+  },
   {
     title: "DriveIn",
     description:
@@ -43,6 +52,7 @@ const PROJECTS = [
     github: "https://github.com/jagustinrm/SPApokemon",
     tags: [TAGS.JS],
   },
+  
 ]
 ---
 
@@ -53,7 +63,7 @@ const PROJECTS = [
   <div class="w-full md:w-1/2">
     <div class="relative flex flex-col items-center col-span-6 row-span-5 gap-8 transition duration-500 ease-in-out transform shadow-xl overflow-clip rounded-xl sm:rounded-xl md:group-hover:-translate-y-1 md:group-hover:shadow-2xl lg:border lg:border-gray-800 lg:hover:border-gray-700 lg:hover:bg-gray-800/50">
       <img alt="" class="object-cover object-top w-full h-56 transition duration-500 sm:h-full md:scale-110 md:group-hover:scale-105" loading="lazy" src={image} />
-    </div>
+    </div>  
   </div>
 
   <div class="w-full md:w-1/2 md:max-w-lg">
